@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'MBF-Taurian';
+    src: url('MBF-Taurian.ttf');
+}
+
+@font-face {
+    font-family: 'Young';
+    src: url('Young.ttf');
+}
+body{
+    font-family: 'Young';
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.corps{
+    background-color: rgba(182, 180, 178, 0.534);
+}
+
+.nav{
+    font-family: 'MBF-Taurian';
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    position: fixed;
+    width: 1500px;
+    z-index: 9999;
+    top: 0;
+
+}
+.menu{
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+
+}
+
+.menu a:hover{
+    color: yellow;
+}
+
+.logo{
+    height: 60px;
+    width: 80px;
+}
+
+/**************************************************************ACCEUIL*****************************************************************/
+
+#banniere{
+    height: 789px;
+}
+
+#prenom{
+    font-family: 'MBF-Taurian';
+    transform: rotate(-90deg);
+    position: relative;
+    top: -900px;
+    left: -600px;
+    font-size: 10rem;
+    color: yellow;
+}
+
+#nom{
+    font-family: 'MBF-Taurian';
+    transform: rotate(-90deg);
+    position: relative;
+    top: -1050px;
+    left: -530px;
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 251, 0);
+}
+
+#section-1{
+    display: flex;
+    flex-direction: row;
+}
+
+#section-1 img{
+    height: 500px;
+    width: 400px;
+}
+
+.vertical-line{
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 130px;
+    margin: 0 20px;
+  }
+
+/****************************************************************** SHOP **********************************************************/
+
+.icofont-basket{
+    color :white
+}
+
+#barre-produit{
+    background-color: black;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+}
+#produits{
+    padding-top: 90px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+
+}
+
+#produits a {
+    text-decoration: none;
+    color: white;
+}
+
+#t-shirt{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 200px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
+
+#sweat-shirt{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 200px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+#chaussettes{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 200px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
+
+.vetement{
+    text-align: left;
+    margin-left: 150px;
+}
+
+.vente{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    top: 20px;
+    left: 145px;
+}
+
+
+/************************************************************** FORMULAIRE **********************************************************/
+#contact-doc{
+    overflow: hidden;
+}
+#contact-form{
+    position: relative;
+    top: 200px;
+    width: calc(50% - 100px);
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;}
+
+#contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 45px;
+}
+
+textarea{
+    font-family: sans-serif;
+}
+
+#footer-form{
+    bottom: 0;
+}
+
+/*****************************************************************FOOTER*************************************************************/
+
+footer{
+    position: absolute;
+    width: 1500px;
+    background-color: black;
+    z-index: 999;
+    padding: 30px;
+    bottom: auto;
+    margin-left: -90px;
+}
+footer ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a img{
+    height: 30px;
+    width: 30px;
+}
+
+
+/*************************************************POLITIQUE CONF****************************************************************/
+
+#politique-conf{
+    margin-top: 150px;
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 45px;
+}
+
+#politique-conf h1{
+    text-align: center;
+}
+
+/************************************************MENTIONS LEGALES**************************************************************************/
+
+#mention-legales{
+    margin-top: 150px;
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 45px;
+}
+
+#mention-legales h1{
+    text-align: center;
+}
+
+#footer-mention{
+    bottom: 0;
+}
+
+/******************************************************************A PROPOS**********************************************************/
+
+#a-propos{
+    margin-top: 150px;
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 45px;
+}
+
+#a-propos h1{
+    text-align: center;
+}
+

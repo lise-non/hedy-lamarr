@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav class="nav">
+            <ul class="menu">
+                <a href="acceuil.html"><img src="images/Logo Hedy Lamarr.svg" alt="Logo" class="logo"></a>
+                <li><a href="acceuil.html">Acceuil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+            
+            <img src="images/hedy_lamarr_canape.png" alt="" id="banniere">
+        
+
+        <div id="prenom">HEDY</div>
+        <div id="nom">LAMARR</div>
+
+        <div id="section-1">
+            <img src="images/5549782.jpg" alt="">
+            <span class="vertical-line"></span>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam in vitae ad quo,
+                 eos dolore repudiandae? Impedit, rerum tenetur! Error qui dicta eaque debitis quibusdam! 
+                 Ad cupiditate nisi quia excepturi.</p>
+            </article>
+        </div>
+        
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="mention-legales.html">Mentions légales</a></li>
+            <li><a href="politique.html">Politique de confidentialité</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/instagram-seeklogo.com.svg" alt="lien vers instagram"></a></li>
+            <li><a href="https://www.linkedin.com/"><img src="images/MicrosoftTeams-image (1).png" alt="lien vers linkedin"></a></li>
+            <li><a href="https://twitter.com/?lang=fr"><img src="images/twitter-svgrepo-com.svg" alt="lien vers twitter"></a></li>
+        </ul>
+    </footer>
+    
+    <script>
+
+    const debutParallax = 100;
+    window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY;
+
+        var bleu = document.getElementById('nom');
+     
+
+        if (scrollPosition > debutParallax) {
+            var test = scrollPosition / 10;
+            nom.style.marginBottom = test + "px";
+
+        
+        }
+    });
+
+    const debutParallax2 = 10;
+    window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY;
+
+        var rouge = document.getElementById('prenom');
+     
+
+        if (scrollPosition > debutParallax2) {
+            var test = scrollPosition / 6;
+            prenom.style.marginBottom = test + "px";
+        }
+    });
+           
+</script>
+</body>
+
+
+</html>
