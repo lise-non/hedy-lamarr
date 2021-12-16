@@ -4,23 +4,25 @@
 }
 
 @font-face {
-    font-family: 'Young';
-    src: url('Young.ttf');
+    font-family: 'Sansation_Regular';
+    src: url('Sansation_Regular.ttf');
 }
 body{
-    font-family: 'Young';
+    font-family: 'Sansation_Regular';
     margin: 0;
     overflow-x: hidden;
+    
+
 }
 
 .corps{
-    background-color: rgba(182, 180, 178, 0.534);
+    background-color: rgba(20, 20, 20, 0.04);
 }
 
 .nav{
     font-family: 'MBF-Taurian';
     margin: 0%;
-    background-color: rgb(0, 0, 0);
+    background-color: #141414;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
@@ -48,7 +50,7 @@ body{
 }
 
 .menu a:hover{
-    color: yellow;
+    color: #f1e60d;
 }
 
 .logo{
@@ -69,7 +71,7 @@ body{
     top: -900px;
     left: -600px;
     font-size: 10rem;
-    color: yellow;
+    color: #f1e60d;
 }
 
 #nom{
@@ -80,25 +82,88 @@ body{
     left: -530px;
     font-size: 10rem;
     color: transparent;
-    -webkit-text-stroke: 2px rgb(255, 251, 0);
+    -webkit-text-stroke: 2px #f1e60d;
+}
+.left{
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding-top: 20px;    
+    padding-bottom: 65px;
+}
+
+.right{
+    justify-content: center;
+    background-color: #141414;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding-top: 40px;
+    padding-bottom: 65px;
 }
 
 #section-1{
-    display: flex;
-    flex-direction: row;
+    margin-top: -320px;
 }
 
-#section-1 img{
-    height: 500px;
+#image-2{
+    width: 370px;
+}
+
+#image-3{
+    height: 410px;
+}
+
+#image-4{
+    height: 350px;
+    width: 410px;
+}
+
+#image-5{
+    height: 510px;
     width: 400px;
+}
+.images-acceuil{
+    height: 450px;
+    width: 400px;
+    margin-top: 150px;
 }
 
 .vertical-line{
-    border-left: 2px solid #000;
+    border-left: 2px solid #141414;
     display: inline-block;
-    height: 130px;
-    margin: 0 20px;
-  }
+    height: 300px;
+    margin: 95px 45px;  }
+
+  .vertical-line-right{
+    border-left: 2px solid rgb(170, 168, 168);
+    display: inline-block;
+    height: 300px;
+    margin: 95px 45px;  }
+
+ p{
+      width: 600px;
+    text-align: left; 
+    font-size: 1.2rem;
+ }
+
+ .texte-droite{
+    text-align: right; 
+
+ }
+
+ article h1{
+    text-align: left; 
+ }
+
+ .titre-droite{
+     text-align: right;
+ }
+
 
 /****************************************************************** SHOP **********************************************************/
 
@@ -107,17 +172,18 @@ body{
 }
 
 #barre-produit{
-    background-color: black;
+    background-color: #141414;
     width: 15%;
     height: 100%;
     position: fixed;
 }
 #produits{
-    padding-top: 90px;
+    padding-top: 150px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 40px 0px;
+    gap: 25px 0px;
+    margin-left: -20px;
 
 }
 
@@ -131,10 +197,11 @@ body{
     border-radius: 10px;
     position: relative;
     margin-left: 285px;
-    top: 200px;
+    top: 130px;
     width: 1000px;
     padding: 40px;
     margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
 
 }
 
@@ -143,10 +210,11 @@ body{
     border-radius: 10px;
     position: relative;
     margin-left: 285px;
-    top: 200px;
+    top: 130px;
     width: 1000px;
     padding: 40px;
     margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
 }
 
 #chaussettes{
@@ -154,40 +222,150 @@ body{
     border-radius: 10px;
     position: relative;
     margin-left: 285px;
-    top: 200px;
+    top: 130px;
     width: 1000px;
     padding: 40px;
     margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
 
+}
+
+#casquette{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
+}
+
+#tote{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
+}
+
+#housse{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
+}
+
+#coque{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
+}
+
+#batterie{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
+}
+
+#poster{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
+}
+
+#mug{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;  
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26); 
+}
+
+#sticker{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 285px;
+    top: 130px;
+    width: 1000px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 15px 1px rgba(20,20,20,0.26);
 }
 
 .vetement{
     text-align: left;
     margin-left: 150px;
+    
 }
 
 .vente{
     
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 110px;
     position: relative;
     top: 20px;
-    left: 145px;
+    left: 90px;
 }
 
+.taille-image{
+    height: 250px;
+    width: 200px;
+}
 
+.taille-image-longue{
+    height: 400px;
+    width: 200px;
+}
+#footer-shop{
+    position:relative;
+    bottom: -200px;
+}
 /************************************************************** FORMULAIRE **********************************************************/
 #contact-doc{
     overflow: hidden;
 }
 #contact-form{
     position: relative;
-    top: 200px;
+    top: 120px;
     width: calc(50% - 100px);
     margin: auto;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     text-align: center;}
 
@@ -202,8 +380,23 @@ textarea{
     font-family: sans-serif;
 }
 
+#button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    position: relative;
+    left: 430px;
+    border: none;
+    
+}
+
+#button:hover{
+    background-color: #f1e60d;
+    
+}
+
 #footer-form{
-    bottom: 0;
+    bottom: 0px;
 }
 
 /*****************************************************************FOOTER*************************************************************/
@@ -211,7 +404,7 @@ textarea{
 footer{
     position: absolute;
     width: 1500px;
-    background-color: black;
+    background-color: #141414;
     z-index: 999;
     padding: 30px;
     bottom: auto;
@@ -246,6 +439,7 @@ footer ul li a img{
     flex-direction: column;
     gap: 3px;
     margin-bottom: 45px;
+    align-items: center;
 }
 
 #politique-conf h1{
@@ -262,6 +456,7 @@ footer ul li a img{
     flex-direction: column;
     gap: 3px;
     margin-bottom: 45px;
+    align-items: center;
 }
 
 #mention-legales h1{
@@ -282,9 +477,73 @@ footer ul li a img{
     flex-direction: column;
     gap: 3px;
     margin-bottom: 45px;
+    align-items: center;
 }
 
 #a-propos h1{
     text-align: center;
 }
 
+#footerpropos{
+    bottom: auto;
+}
+/*******************************************************************GALERIE********************************************************/
+
+#main{
+    min-height:100%;
+   position:relative;
+}
+#photo-2{
+height: 60%;
+position: relative;
+top: 50px;
+left: 80px;
+
+}
+
+#photo-3{
+    height: 75%;
+    position: relative;
+    top: 600px;
+    left: 150px;
+}
+
+#photo-4{
+    height: 85%;
+    position: relative;
+    top: 700px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photo-1{
+    height: 80%;
+    position: relative;
+    top: 800px;
+    left: 130px;
+}
+
+#photo-5{
+    height: 70%;
+    position: relative;
+    top: 1200px;
+    left: 210px;
+}
+
+#photo-6{
+    height: 80%;
+    position: relative;
+    top: 1300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
+
+
+#footer-galerie{
+    position:relative;
+bottom:-1500px;
+}
